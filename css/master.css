@@ -1,0 +1,751 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+body {
+  background-color: #eee;
+}
+.contanier {
+  width: 90%;
+  margin: auto;
+}
+/* start header */
+.header {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.header a select {
+  border: none;
+  padding: 15px;
+  background-color: #eee;
+}
+.header a select:hover {
+  color: rgb(184, 45, 45);
+}
+
+.header ul li a {
+  color: rgba(0, 0, 0, 0.795);
+  padding: 10px;
+}
+
+.header ul li a:hover {
+  color: rgb(184, 45, 45);
+}
+
+.header ul li .fa-mobile {
+  border-left: 1px solid rgb(0 0 0 / 32%);
+  padding-left: 5px;
+}
+
+.header ul li .three {
+  border-right: 1px solid rgb(0 0 0 / 32%);
+  padding-right: 5px;
+}
+/* end header */
+
+/* start nav */
+.nav {
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  box-shadow: 1px 1px 2px 1px rgba(26, 25, 25, 0.432);
+}
+.nav .wide-1 {
+  width: 5%;
+}
+.nav .wide-1 a {
+  font-size: 30px;
+  color: rgb(238, 88, 88);
+}
+.nav .wide-2 {
+  width: 50%;
+}
+
+.nav .wide-2 form {
+  width: 100%;
+  border: 2px solid rgb(238, 88, 88);
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .wide-2 form input {
+  padding: 4px;
+  width: 60%;
+  border: none;
+}
+
+.nav .wide-2 form select {
+  width: 20%;
+  padding: 4px;
+  border: none;
+}
+
+.nav .wide-2 form a button {
+  padding: 5px;
+  border: none;
+  color: rgb(17, 14, 14);
+}
+
+.nav .wide-3 {
+  width: 15%;
+  position: relative;
+}
+
+.nav .wide-3 a {
+  color: rgb(238, 88, 88);
+  font-size: 30px;
+}
+.nav .wide-3 a span {
+  position: absolute;
+  top: -25px;
+  left: 25px;
+  color: white;
+  background-color: rgb(238, 88, 88);
+  border-radius: 50%;
+}
+.nav .all {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+.nav .all .wide-4 a:hover {
+  color: rgb(238, 88, 88);
+}
+.nav .wide-4 {
+  padding: 10px;
+}
+/* end nav */
+
+/*start section-1  */
+
+.section-1 .contanier {
+  display: flex;
+  justify-content: space-around;
+}
+.section-1 .left {
+  background-color: white;
+  width: 20%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.section-1 .left .main {
+  padding: 8px;
+}
+
+.section-1 .left .main a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-1 .left .main a:hover {
+  color: rgb(238, 88, 88);
+}
+
+.section-1 .center {
+  width: 63%;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.section-1 .center .slader {
+  height: 500px;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: slader;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes slader {
+  0% {
+    background-image: url(../img/WhatsApp\ Image\ 2023-01-24\ at\ 4.52.03\ PM.jpeg);
+
+  }
+  100% {
+    background-image: url(../img/83.jpg);
+  
+  }
+}
+
+.right-section {
+  padding: 10px 50px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.right-section .long-1 {
+  padding: 5px 30px;
+}
+
+.right-section .long-2 a {
+  padding: 5px 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.right-section .long-3 a button {
+  padding: 5px 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(173, 54, 54);
+  cursor: inherit;
+}
+.right-section .long-3 a .five {
+  background-color: white;
+}
+
+.right-section .long-3 a button:hover {
+  background-color: white;
+  color: rgb(173, 54, 54);
+}
+
+/* end  section-1*/
+
+/*start section-2  */
+.section-2 .contanier {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 80px;
+  background-color: rgb(255, 251, 251);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .contanier a {
+  color: black;
+}
+.section-2 .contanier a img {
+  width: 50px;
+}
+
+.section-2 .contanier a h4 {
+  font-size: 25px;
+}
+
+.section-2 .contanier a p {
+  max-width: 200px;
+}
+/* end  section-2*/
+
+/*start section-3  */
+.section-3 .contanier {
+  background-color: white;
+  padding: 10px;
+}
+
+.section-3 .contanier .keko {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.section-3 .contanier .keko a {
+  color: black;
+}
+
+.section-3 .contanier .keko a:hover {
+  color: rgb(179, 51, 51);
+}
+
+.section-3 .contanier .keko a img {
+  background-color: black;
+  width: 20px;
+}
+.section-3 .contanier .mark {
+  display: flex;
+  justify-content: space-between;
+}
+.section-3 .contanier .dood {
+  margin-top: 10px;
+  width: 14%;
+}
+
+.section-3 .contanier .dood a {
+  color: black;
+}
+.section-3 .contanier .dood a img {
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.section-3 .contanier .dood a h3:hover {
+  color: rgb(179, 51, 51);
+}
+.section-3 .contanier .dood .like-1 {
+  background-color: rgb(179, 51, 51);
+  width: 40%;
+  border-radius: 5%;
+}
+
+.section-3 .contanier .dood .like-2 {
+  text-decoration: line-through;
+}
+
+.section-3 .contanier .dood .lik-1 {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 5px;
+}
+
+/* end  section-3*/
+
+/*start section-4  */
+.section-4 .contanier {
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px;
+}
+.section-4 .contanier .keko {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-4 .contanier .keko a {
+  color: black;
+}
+
+.section-4 .contanier .keko a:hover {
+  color: rgb(179, 51, 51);
+}
+
+.section-4 .contanier .keko a img {
+  background-color: black;
+  width: 20px;
+}
+.section-4 .contanier .mark {
+  display: flex;
+  justify-content: space-around;
+}
+.section-4 .contanier .dood {
+  margin-top: 10px;
+}
+
+.section-4 .contanier .dood a {
+  color: black;
+}
+.section-4 .contanier .dood a img {
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.section-4 .contanier .dood a h3:hover {
+  color: rgb(179, 51, 51);
+}
+.section-4 .contanier .dood .like-1 {
+  background-color: rgb(179, 51, 51);
+  width: 40%;
+  border-radius: 5%;
+}
+
+.section-4 .contanier .dood .like-2 {
+  text-decoration: line-through;
+}
+
+.section-4 .contanier .dood .lik-1 {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 5px;
+}
+/* end  section-4*/
+
+/*start section-5  */
+.section-5 .contanier {
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px;
+}
+.section-5 .contanier .keko {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-5 .contanier .keko a {
+  color: black;
+}
+
+.section-5 .contanier .keko a:hover {
+  color: rgb(179, 51, 51);
+}
+
+.section-5 .contanier .keko a img {
+  background-color: black;
+  width: 20px;
+}
+.section-5 .contanier .mark {
+  display: flex;
+  justify-content: space-around;
+}
+.section-5 .contanier .dood {
+  margin-top: 10px;
+}
+
+.section-5 .contanier .dood a {
+  color: black;
+}
+.section-5 .contanier .dood a img {
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.section-5 .contanier .dood a h3:hover {
+  color: rgb(179, 51, 51);
+}
+.section-5 .contanier .dood .like-1 {
+  background-color: rgb(179, 51, 51);
+  width: 40%;
+  border-radius: 5%;
+}
+
+.section-5 .contanier .dood .like-2 {
+  text-decoration: line-through;
+}
+
+.section-5 .contanier .dood .lik-1 {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 5px;
+}
+/* end  section-5*/
+
+/*start section-6  */
+.section-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.section-6 .lok {
+  width: 15%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.692);
+  margin: 10px;
+}
+/* end section */
+
+/*start section-7  */
+.section-7 .contanier {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.section-7 .contanier .mark {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-7 .contanier .dood {
+  margin-top: 10px;
+  background-color: white;
+}
+
+.section-7 .contanier .dood:hover {
+  border: 2px solid orangered;
+  border-radius: 5px;
+}
+
+.section-7 .contanier .dood a {
+  color: black;
+}
+.section-7 .contanier .dood a img {
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.section-7 .contanier .dood span {
+  color: rgb(179, 51, 51);
+  font-size: 20px;
+}
+
+.section-7 .contanier .dood .lik-1 {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
+}
+/* end  section-7*/
+
+/*start section-8  */
+.section-8 {
+  margin-top: 20px;
+  background-color: white;
+}
+.section-8 .contanier .main-4 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-8 .contanier .main-4 .lorm {
+  margin-top: 40px;
+  text-align: center;
+}
+.section-8 .contanier .main-4 .lorm img {
+  width: 50px;
+  height: 50px;
+}
+
+.section-8 .contanier .main-4 .lorm p {
+  max-width: 180px;
+}
+
+.section-8 .contanier .loo {
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.418);
+}
+
+.section-8 .contanier .main-5 {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-8 .contanier .main-5 .city-1 ul {
+  display: flex;
+  padding: 10px;
+}
+
+.section-8 .contanier .main-5 .city-1 ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.section-8 .contanier .main-5 .city-2 {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.section-8 .contanier .main-5 .city-2 ul li {
+  padding: 10px;
+}
+
+.section-8 .contanier .main-5 .city-2 ul li a {
+  color: rgb(161, 161, 161);
+}
+
+/* end  section-8 */
+
+/* start  section-9 */
+.section-9 {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: rgb(223, 219, 219);
+}
+
+.section-9 .contanier .city-city-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-9 .contanier .city-city-1 .boh-1 h2 {
+  color: rgb(46, 43, 43);
+}
+
+.section-9 .contanier .city-city-1 .boh-1 h2,
+ul {
+  padding: 10px;
+}
+
+.section-9 .contanier .city-city-1 .boh-1 ul li a {
+  color: rgb(73, 70, 70);
+}
+
+.section-9 .contanier .city-city-1 .boh-1 ul li a:hover {
+  color: rgba(241, 69, 39, 0.699);
+}
+
+.section-9 .contanier .city-city-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.section-9 .contanier .city-city-2 .boh-1 h2 {
+  color: rgb(46, 43, 43);
+}
+.section-9 .contanier .city-city-2 .boh-1 h2,
+ul {
+  padding: 10px;
+}
+
+.section-9 .contanier .city-city-2 .boh-1 ul li a {
+  color: rgb(73, 70, 70);
+}
+.section-9 .contanier .city-city-2 .boh-1 ul li a:hover {
+  color: rgba(241, 69, 39, 0.699);
+}
+
+.section-9 .contanier .city-city-2 .boh-1 ul .bom {
+  max-width: 450px;
+}
+
+.section-9 .contanier .city-city-3 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.section-9 .contanier .city-city-3 .met-1 {
+  background-color: rgb(97, 190, 4);
+  padding: 10px;
+  border-radius: 5px;
+}
+.section-9 .contanier .city-city-3 .met-1 a {
+  color: white;
+}
+
+.section-9 .contanier .city-city-3 .met-2 {
+  background-color: rgb(133, 126, 126);
+  padding: 10px;
+  border-radius: 5px;
+}
+.section-9 .contanier .city-city-3 .met-2 a {
+  color: white;
+}
+
+.section-9 .contanier .city-city-3 .met-3 {
+  background-color: brown;
+  padding: 10px;
+  border-radius: 5px;
+}
+.section-9 .contanier .city-city-3 .met-3 a {
+  color: white;
+}
+/* end  section-9 */
+
+/* start  section-10 */
+.section-10 {
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+.section-10 .contanier .city-city-4 ul li a {
+  color: rgb(226, 212, 212);
+}
+/* end  section-10 */
+
+.lik-1 {
+  width: 100%;
+}
+
+@media (min-width : 200px) and (max-width:1250px) {
+  .header {
+    display: none;
+  }
+  .wide-4{
+    display: none;
+  }
+
+  .nav{
+    height: 50px;
+    width: 90%;
+  }
+
+  .nav .wide-1 a {
+    font-size: 15px;
+    margin-left: -20px;
+  }
+
+
+  .section-1 .left {
+    display: none;
+  }
+
+    .section-1 .center {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .section-3 .contanier {
+    width: 70%;
+}
+    
+  .section-3 .contanier .dood {
+    width: 45%;
+  }
+
+  .section-3 .contanier .dood .lik-1 {
+    width: 100%;
+  }
+
+  .section-3 .contanier .mark {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.section-4 .contanier .mark {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  .section-4 .contanier .dood {
+    width: 45%;
+  }
+
+  .section-4 .contanier .dood .lik-1 {
+    width: 100%;
+
+  }
+
+  .section-5 .contanier .dood {
+    width: 45%;
+  }
+
+  .section-5 .contanier .dood .lik-1 {
+    width: 100%;
+
+  }
+
+  .section-5 .contanier .mark {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+  .section-7 .contanier .mark {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-7 .contanier .dood {
+    width: 45%;
+  }
+
+  .section-7 .contanier .dood .lik-1 {
+    width: 100%;
+
+  }
+  .section-2 .contanier  {
+    display: none;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .section-8 {
+    display: none;
+  }
+}
